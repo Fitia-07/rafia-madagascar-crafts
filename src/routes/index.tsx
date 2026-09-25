@@ -152,14 +152,16 @@ function Index() {
             />
             <div className="absolute -bottom-8 left-0 right-8 md:right-16 bg-card/95 p-6 shadow-xl border border-ink/5">
               <h2 className="font-display text-2xl md:text-3xl font-light leading-tight italic">
-                Le raphia de Madagascar,{" "}
+                Une tradition familiale,{" "}
                 <span className="not-italic font-semibold">
-                  tressé à la main.
+                  tressée à la main.
                 </span>
               </h2>
               <p className="mt-3 text-[12px] leading-relaxed text-ink/70">
-                Sacs, chapeaux, tapis et boîtes façonnés par nos artisans. Vente
-                en gros, sans intermédiaire.
+                Sacs, chapeaux, tapis et boîtes nés dans notre atelier
+                d'Antananarivo. Nos artisans — parmi les meilleurs du raphia —
+                façonnent chaque pièce à la main, avec amour et patience. Vente
+                en gros, directement du fabricant.
               </p>
             </div>
           </div>
