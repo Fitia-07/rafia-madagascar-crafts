@@ -4,20 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -59,86 +45,104 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-ocean: var(--ocean);
+  --color-lagoon: var(--lagoon);
+  --color-sand: var(--sand);
+  --color-raphia: var(--raphia);
+  --color-ember: var(--ember);
+  --color-ink: var(--ink);
+  --color-mad-red: var(--mad-red);
+  --color-mad-green: var(--mad-green);
+  --font-display: "Fraunces", serif;
+  --font-body: "DM Sans", sans-serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --radius: 0.375rem;
+  --background: #F7F1E6;
+  --foreground: #123B40;
+  --card: #FFFFFF;
+  --card-foreground: #123B40;
+  --popover: #FFFFFF;
+  --popover-foreground: #123B40;
+  --primary: #123B40;
+  --primary-foreground: #F7F1E6;
+  --secondary: #EFE6D2;
+  --secondary-foreground: #123B40;
+  --muted: #EFE6D2;
+  --muted-foreground: #6B7D80;
+  --accent: #E77A38;
+  --accent-foreground: #F7F1E6;
+  --destructive: #B91C1C;
+  --destructive-foreground: #F7F1E6;
+  --border: rgba(18, 59, 64, 0.1);
+  --input: rgba(18, 59, 64, 0.1);
+  --ring: #0FB5B0;
+  --chart-1: #0FB5B0;
+  --chart-2: #7FD4C6;
+  --chart-3: #D8B46B;
+  --chart-4: #E77A38;
+  --chart-5: #123B40;
+  --sidebar: #F7F1E6;
+  --sidebar-foreground: #123B40;
+  --sidebar-primary: #123B40;
+  --sidebar-primary-foreground: #F7F1E6;
+  --sidebar-accent: #EFE6D2;
+  --sidebar-accent-foreground: #123B40;
+  --sidebar-border: rgba(18, 59, 64, 0.1);
+  --sidebar-ring: #0FB5B0;
+  --ocean: #0FB5B0;
+  --lagoon: #7FD4C6;
+  --sand: #F7F1E6;
+  --raphia: #D8B46B;
+  --ember: #E77A38;
+  --ink: #123B40;
+  --mad-red: #FC3D32;
+  --mad-green: #007E3A;
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --background: #123B40;
+  --foreground: #F7F1E6;
+  --card: #1A4D52;
+  --card-foreground: #F7F1E6;
+  --popover: #1A4D52;
+  --popover-foreground: #F7F1E6;
+  --primary: #F7F1E6;
+  --primary-foreground: #123B40;
+  --secondary: #1A4D52;
+  --secondary-foreground: #F7F1E6;
+  --muted: #1A4D52;
+  --muted-foreground: #7FD4C6;
+  --accent: #E77A38;
+  --accent-foreground: #F7F1E6;
+  --destructive: #B91C1C;
+  --destructive-foreground: #F7F1E6;
+  --border: rgba(247, 241, 230, 0.1);
+  --input: rgba(247, 241, 230, 0.1);
+  --ring: #0FB5B0;
+  --chart-1: #0FB5B0;
+  --chart-2: #7FD4C6;
+  --chart-3: #D8B46B;
+  --chart-4: #E77A38;
+  --chart-5: #F7F1E6;
+  --sidebar: #123B40;
+  --sidebar-foreground: #F7F1E6;
+  --sidebar-primary: #F7F1E6;
+  --sidebar-primary-foreground: #123B40;
+  --sidebar-accent: #1A4D52;
+  --sidebar-accent-foreground: #F7F1E6;
+  --sidebar-border: rgba(247, 241, 230, 0.1);
+  --sidebar-ring: #0FB5B0;
 }
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "DM Sans", sans-serif;
   }
 }
