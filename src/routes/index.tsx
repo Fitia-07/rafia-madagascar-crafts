@@ -39,25 +39,25 @@ const collections = [
     img: sacsImg,
     title: "Sacs",
     desc: "Crochet & cuir",
-    alt: "Sac en raphia avec cuir fait main",
+    alt: "Sac en raphia coloré avec cuir fait main",
   },
   {
-    img: chapeauxImg,
+    img: chapeauReel.url,
     title: "Chapeaux",
     desc: "Tressés à la main",
-    alt: "Chapeau en raphia fait main",
+    alt: "Chapeau en raphia tressé à la main",
   },
   {
     img: tapisImg,
     title: "Tapis",
     desc: "Raphia tissé",
-    alt: "Tapis en raphia fait main",
+    alt: "Tapis en raphia coloré fait main",
   },
   {
     img: boitesImg,
     title: "Boîtes & pochettes",
     desc: "Détail cuir",
-    alt: "Boîtes et pochettes en raphia",
+    alt: "Boîtes et pochettes en raphia coloré",
   },
 ];
 
