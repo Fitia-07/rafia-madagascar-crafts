@@ -5,21 +5,27 @@ import chapeauxImg from "@/assets/chapeaux.jpg";
 import tapisImg from "@/assets/tapis.jpg";
 import boitesImg from "@/assets/boites.jpg";
 import savoirFaireImg from "@/assets/savoir-faire.jpg";
+import sacFleurs from "@/assets/uploads/sac-fleurs.jpg.asset.json";
+import sacSpirale from "@/assets/uploads/sac-spirale.jpg.asset.json";
+import sacBeige from "@/assets/uploads/sac-beige.jpg.asset.json";
+import sacNavy from "@/assets/uploads/sac-navy.jpg.asset.json";
+import sacAnthracite from "@/assets/uploads/sac-tisseur-anthracite.jpg.asset.json";
+import sacOr from "@/assets/uploads/sac-tisseur-or.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Raffia&Co — Raphia & Cuir de Madagascar" },
+      { title: "Raffia&Co — Fabricant & Grossiste de sacs en raphia de Madagascar" },
       {
         name: "description",
         content:
-          "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main, fabrication directe à Antananarivo.",
+          "Fabricant & grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Nous accompagnons marques, importateurs et distributeurs du monde entier. Artisanat fait main à Antananarivo.",
       },
-      { property: "og:title", content: "Raffia&Co — Raphia & Cuir de Madagascar" },
+      { property: "og:title", content: "Raffia&Co — Fabricant & Grossiste de sacs en raphia de Madagascar" },
       {
         property: "og:description",
         content:
-          "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main.",
+          "Fabricant & grossiste de sacs en raphia de Madagascar. Fabrication artisanale, capacité de production importante, raphia naturel.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -55,6 +61,39 @@ const collections = [
   },
 ];
 
+const creations = [
+  {
+    img: sacFleurs.url,
+    alt: "Sac en raphia orné de fleurs colorées crochetées",
+    label: "Sac fleurs",
+  },
+  {
+    img: sacSpirale.url,
+    alt: "Sac tote en raphia à motifs spirales beige et brun",
+    label: "Sac spirale",
+  },
+  {
+    img: sacBeige.url,
+    alt: "Sac en raphia beige naturelle",
+    label: "Sac naturel",
+  },
+  {
+    img: sacNavy.url,
+    alt: "Sac en raphia bleu marine avec poignées en cuir",
+    label: "Sac marine & cuir",
+  },
+  {
+    img: sacAnthracite.url,
+    alt: "Sac tressé en raphia anthracite avec bouton en bois",
+    label: "Sac tisseur anthracite",
+  },
+  {
+    img: sacOr.url,
+    alt: "Sac tressé en raphia aux motifs dorés",
+    label: "Sac tisseur or",
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-sand text-ink font-body">
@@ -86,7 +125,24 @@ function Index() {
       {/* Main */}
       <main className="mx-auto max-w-5xl">
         {/* Hero */}
-        <section className="px-6 pt-6 pb-14">
+        <section className="px-6 pt-10 pb-14">
+          {/* Captivating intro */}
+          <div className="mb-10 max-w-2xl">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-ember">
+              Fabricant & Grossiste
+            </span>
+            <h1 className="font-display text-3xl md:text-4xl font-light leading-[1.15] mt-3">
+              Fabricant & Grossiste de sacs{" "}
+              <span className="italic">en raphia de Madagascar</span>
+            </h1>
+            <p className="mt-5 text-sm leading-relaxed text-ink/75">
+              Nous accompagnons les marques, importateurs, distributeurs et
+              grossistes du monde entier grâce à une fabrication artisanale de
+              qualité, une capacité de production importante et une expertise
+              reconnue dans le raphia naturel de Madagascar.
+            </p>
+          </div>
+
           <div className="relative">
             <img
               src={heroImg}
@@ -94,12 +150,12 @@ function Index() {
               className="w-full aspect-[4/5] md:aspect-[16/10] object-cover rounded-sm"
             />
             <div className="absolute -bottom-8 left-0 right-8 md:right-16 bg-card/95 p-6 shadow-xl border border-ink/5">
-              <h1 className="font-display text-2xl md:text-3xl font-light leading-tight italic">
+              <h2 className="font-display text-2xl md:text-3xl font-light leading-tight italic">
                 Le raphia de Madagascar,{" "}
                 <span className="not-italic font-semibold">
                   tressé à la main.
                 </span>
-              </h1>
+              </h2>
               <p className="mt-3 text-[12px] leading-relaxed text-ink/70">
                 Sacs, chapeaux, tapis et boîtes façonnés par nos artisans. Vente
                 en gros, sans intermédiaire.
@@ -136,6 +192,34 @@ function Index() {
           </div>
         </section>
 
+        {/* Nos créations — vraies photos produits */}
+        <section className="px-6 py-12 bg-card/30">
+          <div className="mb-8">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-ember">
+              Réalisations de l'atelier
+            </span>
+            <h2 className="font-display text-2xl mt-2">Nos créations</h2>
+            <p className="mt-3 text-sm text-ink/70 max-w-2xl leading-relaxed">
+              Quelques pièces sorties de notre atelier d'Antananarivo. Chaque sac
+              est crocheté et tressé à la main, avec finitions en cuir.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {creations.map((item) => (
+              <figure key={item.label} className="overflow-hidden rounded-sm border border-ink/5 bg-sand">
+                <img
+                  src={item.img}
+                  alt={item.alt}
+                  className="w-full aspect-[3/4] object-cover"
+                />
+                <figcaption className="px-3 py-2 text-[10px] uppercase tracking-widest text-ink/60">
+                  {item.label}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
         {/* Savoir-faire */}
         <section className="px-6 py-16 bg-card/40">
           <div className="mb-8">
@@ -147,7 +231,7 @@ function Index() {
               Madagascar possède l'une des meilleures qualités au monde grâce à
               son climat tropical et au palmier{" "}
               <span className="italic font-medium text-ocean">
-                Raphia Farinifera
+                raphia
               </span>
               . Un savoir-faire transmis de génération en génération pour des
               fibres longues, souples et résistantes.
@@ -159,18 +243,19 @@ function Index() {
             className="w-full aspect-[16/10] object-cover rounded-sm"
           />
 
-          <div className="mt-8 space-y-8">
+          <div className="mt-10 space-y-8">
             <div className="flex gap-4">
               <div className="shrink-0 w-8 h-8 rounded-full bg-lagoon/20 flex items-center justify-center">
                 <span className="text-[10px] font-bold text-ink">01</span>
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  Fabricant Direct
+                  L'atelier, sans intermédiaire
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  Basé à Antananarivo. Toute la production est réalisée dans
-                  notre atelier, par nos artisans, sans intermédiaire.
+                  Tout naît sous notre toit, à Antananarivo. Du fil de raphia
+                  brut jusqu'à la pièce finie, nos artisans maîtrisent chaque
+                  geste — vous achetez au fabricant, pas à un revendeur.
                 </p>
               </div>
             </div>
@@ -180,11 +265,12 @@ function Index() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  Sur Mesure
+                  Façonné pour votre marque
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  Fabrication selon votre cahier des charges : dimensions,
-                  couleurs, logo tissé et packaging personnalisé.
+                  Dimensions, palette de couleurs, logo tissé dans la matière,
+                  packaging signé : nous suivons votre cahier des charges pour
+                  des pièces qui portent votre identité.
                 </p>
               </div>
             </div>
@@ -194,11 +280,12 @@ function Index() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  Capacité & Échelle
+                  De l'unité au volume
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  De quelques centaines à plusieurs dizaines de milliers de
-                  pièces par mois. Contrôle qualité individuel.
+                  Quelques centaines comme plusieurs dizaines de milliers de
+                  pièces par mois. Chaque sac passe entre les mains d'un
+                  contrôleur qualité avant de quitter l'atelier.
                 </p>
               </div>
             </div>
@@ -236,9 +323,12 @@ function Index() {
               Prêt à lancer <br />
               <span className="italic">votre collection ?</span>
             </h2>
-            <p className="text-sm text-sand/70 mb-8">
+            <p className="text-sm text-sand/70 mb-2">
               Contactez-nous par email pour obtenir un devis personnalisé. Nous
               répondons à toutes les marques.
+            </p>
+            <p className="text-[10px] uppercase tracking-widest text-sand/50 mb-8">
+              Iavoloha • Madagascar
             </p>
             <a
               href="mailto:ramonafamily3@gmail.com"
@@ -263,8 +353,11 @@ function Index() {
       <footer className="px-6 pb-12 text-center">
         <div className="h-[1px] w-12 bg-ember mx-auto mb-8"></div>
         <p className="font-display text-xl mb-1">Raffia&Co</p>
-        <p className="text-[10px] text-ink/50 uppercase tracking-widest mb-6">
+        <p className="text-[10px] text-ink/50 uppercase tracking-widest mb-2">
           Raphia & Cuir — Madagascar
+        </p>
+        <p className="text-[9px] text-ink/40 uppercase tracking-[0.2em] mb-6">
+          Iavoloha • Antananarivo
         </p>
         <div className="flex justify-center gap-2 mb-6">
           <div className="size-2 bg-mad-red rounded-full"></div>
