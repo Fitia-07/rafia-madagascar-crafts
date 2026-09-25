@@ -9,13 +9,13 @@ import savoirFaireImg from "@/assets/savoir-faire.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tany Rosso — Raphia & Cuir de Madagascar" },
+      { title: "Raffia&Co — Raphia & Cuir de Madagascar" },
       {
         name: "description",
         content:
           "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main, fabrication directe à Antananarivo.",
       },
-      { property: "og:title", content: "Tany Rosso — Raphia & Cuir de Madagascar" },
+      { property: "og:title", content: "Raffia&Co — Raphia & Cuir de Madagascar" },
       {
         property: "og:description",
         content:
@@ -68,7 +68,7 @@ function Index() {
         <div className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
           <div className="flex flex-col">
             <span className="font-display text-xl font-medium tracking-tight">
-              Tany Rosso
+              Raffia&Co
             </span>
             <span className="text-[8px] font-bold uppercase tracking-[0.3em] text-ocean -mt-1">
               Raphia & Cuir
@@ -247,7 +247,7 @@ function Index() {
               ramonafamily3@gmail.com
             </a>
             <a
-              href="mailto:ramonafamily3@gmail.com?subject=Demande%20de%20catalogue%20-%20Tany%20Rosso"
+              href="mailto:ramonafamily3@gmail.com?subject=Demande%20de%20catalogue%20-%20Raffia%26Co"
               className="block w-full py-4 border border-sand/30 text-sand text-center text-[10px] font-bold uppercase tracking-[0.2em] transition-colors hover:border-sand"
             >
               Demander le catalogue
@@ -262,7 +262,7 @@ function Index() {
       {/* Footer */}
       <footer className="px-6 pb-12 text-center">
         <div className="h-[1px] w-12 bg-ember mx-auto mb-8"></div>
-        <p className="font-display text-xl mb-1">Tany Rosso</p>
+        <p className="font-display text-xl mb-1">Raffia&Co</p>
         <p className="text-[10px] text-ink/50 uppercase tracking-widest mb-6">
           Raphia & Cuir — Madagascar
         </p>

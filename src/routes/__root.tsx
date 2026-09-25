@@ -77,10 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Tany Rosso — Raphia & Cuir de Madagascar" },
+      { title: "Raffia&Co — Raphia & Cuir de Madagascar" },
       { name: "description", content: "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main, fabrication directe à Antananarivo." },
-      { property: "og:title", content: "Tany Rosso — Raphia & Cuir de Madagascar" },
-      { property: "og:description", content: "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main." },
+      { property: "og:title", content: "Raffia&Co — Raphia & Cuir de Madagascar" },
+      {
+        property: "og:description",
+        content:
+          "Grossiste de sacs, chapeaux, tapis et boîtes en raphia de Madagascar. Artisanat fait main.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
