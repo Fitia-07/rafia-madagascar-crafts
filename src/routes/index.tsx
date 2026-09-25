@@ -132,14 +132,15 @@ function Index() {
               Fabricant & Grossiste
             </span>
             <h1 className="font-display text-3xl md:text-4xl font-light leading-[1.15] mt-3">
-              Fabricant & Grossiste de sacs{" "}
-              <span className="italic">en raphia de Madagascar</span>
+              Le raphia de Madagascar,{" "}
+              <span className="italic">tressé pour le monde.</span>
             </h1>
             <p className="mt-5 text-sm leading-relaxed text-ink/75">
-              Nous accompagnons les marques, importateurs, distributeurs et
-              grossistes du monde entier grâce à une fabrication artisanale de
-              qualité, une capacité de production importante et une expertise
-              reconnue dans le raphia naturel de Madagascar.
+              De notre atelier familial d'Antananarivo aux marques,
+              importateurs et distributeurs du monde entier : une fibre
+              naturelle d'exception, les meilleurs artisans du pays, et la
+              capacité de produire en grand. Chaque pièce porte la main et
+              l'amour de ceux qui l'ont façonnée.
             </p>
           </div>
 
