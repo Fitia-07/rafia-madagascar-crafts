@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
 import sacsImg from "@/assets/sacs.jpg";
-import chapeauxImg from "@/assets/chapeaux.jpg";
+import chapeauReel from "@/assets/uploads/chapeau-reel.jpg.asset.json";
 import tapisImg from "@/assets/tapis.jpg";
 import boitesImg from "@/assets/boites.jpg";
 import savoirFaireImg from "@/assets/savoir-faire.jpg";
@@ -39,25 +39,25 @@ const collections = [
     img: sacsImg,
     title: "Sacs",
     desc: "Crochet & cuir",
-    alt: "Sac en raphia avec cuir fait main",
+    alt: "Sac en raphia coloré avec cuir fait main",
   },
   {
-    img: chapeauxImg,
+    img: chapeauReel.url,
     title: "Chapeaux",
     desc: "Tressés à la main",
-    alt: "Chapeau en raphia fait main",
+    alt: "Chapeau en raphia tressé à la main",
   },
   {
     img: tapisImg,
     title: "Tapis",
     desc: "Raphia tissé",
-    alt: "Tapis en raphia fait main",
+    alt: "Tapis en raphia coloré fait main",
   },
   {
     img: boitesImg,
     title: "Boîtes & pochettes",
     desc: "Détail cuir",
-    alt: "Boîtes et pochettes en raphia",
+    alt: "Boîtes et pochettes en raphia coloré",
   },
 ];
 
@@ -132,14 +132,15 @@ function Index() {
               Fabricant & Grossiste
             </span>
             <h1 className="font-display text-3xl md:text-4xl font-light leading-[1.15] mt-3">
-              Fabricant & Grossiste de sacs{" "}
-              <span className="italic">en raphia de Madagascar</span>
+              Le raphia de Madagascar,{" "}
+              <span className="italic">tressé pour le monde.</span>
             </h1>
             <p className="mt-5 text-sm leading-relaxed text-ink/75">
-              Nous accompagnons les marques, importateurs, distributeurs et
-              grossistes du monde entier grâce à une fabrication artisanale de
-              qualité, une capacité de production importante et une expertise
-              reconnue dans le raphia naturel de Madagascar.
+              De notre atelier familial d'Antananarivo aux marques,
+              importateurs et distributeurs du monde entier : une fibre
+              naturelle d'exception, les meilleurs artisans du pays, et la
+              capacité de produire en grand. Chaque pièce porte la main et
+              l'amour de ceux qui l'ont façonnée.
             </p>
           </div>
 
@@ -151,14 +152,16 @@ function Index() {
             />
             <div className="absolute -bottom-8 left-0 right-8 md:right-16 bg-card/95 p-6 shadow-xl border border-ink/5">
               <h2 className="font-display text-2xl md:text-3xl font-light leading-tight italic">
-                Le raphia de Madagascar,{" "}
+                Une tradition familiale,{" "}
                 <span className="not-italic font-semibold">
-                  tressé à la main.
+                  tressée à la main.
                 </span>
               </h2>
               <p className="mt-3 text-[12px] leading-relaxed text-ink/70">
-                Sacs, chapeaux, tapis et boîtes façonnés par nos artisans. Vente
-                en gros, sans intermédiaire.
+                Sacs, chapeaux, tapis et boîtes nés dans notre atelier
+                d'Antananarivo. Nos artisans — parmi les meilleurs du raphia —
+                façonnent chaque pièce à la main, avec amour et patience. Vente
+                en gros, directement du fabricant.
               </p>
             </div>
           </div>
