@@ -304,7 +304,7 @@ function Index() {
           <div className="size-2 bg-mad-green rounded-full"></div>
         </div>
         <p className="text-[8px] text-ink/30 uppercase mt-8 tracking-widest">
-          © 2026 • Atelier d'Antananarivo
+          © 2023-2026 • Atelier d'Antananarivo
         </p>
       </footer>
     </div>
