@@ -128,11 +128,11 @@ function Index() {
           <img
             src={collectionDisplay.url}
             alt="Collection de sacs, chapeaux, tapis et boîtes en raphia coloré de Madagascar"
-            className="w-full aspect-[4/3] object-cover rounded-sm border border-ink/5"
+            className="w-full object-contain rounded-sm border border-ink/5"
           />
         </section>
 
-        {/* Nos créations — vraies photos produits */}
+        {/* Nos créations — photo complète de l'atelier */}
         <section className="px-6 py-12 bg-card/30">
           <div className="mb-8">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-ember">
@@ -144,20 +144,11 @@ function Index() {
               est crocheté et tressé à la main, avec finitions en cuir.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {creations.map((item) => (
-              <figure key={item.label} className="overflow-hidden rounded-sm border border-ink/5 bg-sand">
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="w-full aspect-[3/4] object-cover"
-                />
-                <figcaption className="px-3 py-2 text-[10px] uppercase tracking-widest text-ink/60">
-                  {item.label}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <img
+            src={creationsDisplay.url}
+            alt="Sacs, chapeaux, paniers, tapis et accessoires en raphia coloré faits main à Madagascar"
+            className="w-full object-contain rounded-sm border border-ink/5"
+          />
         </section>
 
         {/* Savoir-faire */}
