@@ -189,12 +189,13 @@ function Index() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  L'atelier, sans intermédiaire
+                  Au cœur de notre atelier
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  Tout naît sous notre toit, à Antananarivo. Du fil de raphia
-                  brut jusqu'à la pièce finie, nos artisans maîtrisent chaque
-                  geste — vous achetez au fabricant, pas à un revendeur.
+                  À Antananarivo, chaque création prend vie au sein de notre
+                  atelier familial. De la préparation du raphia aux dernières
+                  finitions, nous suivons chaque étape avec soin pour préserver
+                  la qualité et l'authenticité de chaque pièce.
                 </p>
               </div>
             </div>
@@ -204,12 +205,13 @@ function Index() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  Façonné pour votre marque
+                  Créé selon vos envies
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  Dimensions, palette de couleurs, logo tissé dans la matière,
-                  packaging signé : nous suivons votre cahier des charges pour
-                  des pièces qui portent votre identité.
+                  Couleurs, dimensions, formes, motifs, finitions ou détails
+                  personnalisés : nous adaptons nos créations à vos besoins et
+                  donnons vie à vos idées, jusqu'aux pièces entièrement conçues
+                  sur mesure.
                 </p>
               </div>
             </div>
@@ -219,12 +221,13 @@ function Index() {
               </div>
               <div>
                 <h4 className="font-bold text-[11px] uppercase tracking-widest mb-1">
-                  De l'unité au volume
+                  Du projet à la production
                 </h4>
                 <p className="text-[13px] text-ink/70 leading-snug">
-                  Quelques centaines comme plusieurs dizaines de milliers de
-                  pièces par mois. Chaque sac passe entre les mains d'un
-                  contrôleur qualité avant de quitter l'atelier.
+                  Que vous souhaitiez une petite série ou une production en
+                  volume, notre atelier s'adapte à vos projets. Chaque création
+                  est soigneusement vérifiée avant de quitter nos mains, pour
+                  garantir une qualité constante.
                 </p>
               </div>
             </div>
@@ -274,6 +277,12 @@ function Index() {
               className="block w-full py-4 bg-sand text-ink text-center text-[10px] font-bold uppercase tracking-[0.2em] transition-colors hover:bg-card mb-3 break-all"
             >
               ramonafamily3@gmail.com
+            </a>
+            <a
+              href="https://wa.me/261340774637"
+              className="block w-full py-4 bg-sand text-ink text-center text-[10px] font-bold uppercase tracking-[0.2em] transition-colors hover:bg-card mb-3"
+            >
+              WhatsApp : +261 34 07 746 37
             </a>
             <a
               href="mailto:ramonafamily3@gmail.com?subject=Demande%20de%20catalogue%20-%20Raffia%26Co"
