@@ -162,24 +162,11 @@ function Index() {
             </span>
             <h2 className="font-display text-2xl mt-2">La collection</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {collections.map((item) => (
-              <div
-                key={item.title}
-                className="bg-card/40 border border-ink/5 rounded-sm p-3"
-              >
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="w-full aspect-square rounded-sm object-cover mb-3"
-                />
-                <p className="font-display text-base font-semibold">
-                  {item.title}
-                </p>
-                <p className="text-xs text-ink/60">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          <img
+            src={collectionDisplay.url}
+            alt="Collection de sacs, chapeaux, tapis et boîtes en raphia coloré de Madagascar"
+            className="w-full aspect-[4/3] object-cover rounded-sm border border-ink/5"
+          />
         </section>
 
         {/* Nos créations — vraies photos produits */}
