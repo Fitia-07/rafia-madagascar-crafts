@@ -1,9 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
-import sacsImg from "@/assets/sacs.jpg";
-import chapeauReel from "@/assets/uploads/chapeau-reel.jpg.asset.json";
-import tapisImg from "@/assets/tapis.jpg";
-import boitesImg from "@/assets/boites.jpg";
 import savoirFaireImg from "@/assets/savoir-faire.jpg";
 import sacFleurs from "@/assets/uploads/sac-fleurs.jpg.asset.json";
 import sacSpirale from "@/assets/uploads/sac-spirale.jpg.asset.json";
@@ -11,6 +7,7 @@ import sacBeige from "@/assets/uploads/sac-beige.jpg.asset.json";
 import sacNavy from "@/assets/uploads/sac-navy.jpg.asset.json";
 import sacAnthracite from "@/assets/uploads/sac-tisseur-anthracite.jpg.asset.json";
 import sacOr from "@/assets/uploads/sac-tisseur-or.jpg.asset.json";
+import collectionDisplay from "@/assets/uploads/collection-display.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
