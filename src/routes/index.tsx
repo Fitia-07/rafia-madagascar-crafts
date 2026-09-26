@@ -27,38 +27,6 @@ export const Route = createFileRoute("/")({
 });
 
 
-const creations = [
-  {
-    img: sacFleurs.url,
-    alt: "Sac en raphia orné de fleurs colorées crochetées",
-    label: "Sac fleurs",
-  },
-  {
-    img: sacSpirale.url,
-    alt: "Sac tote en raphia à motifs spirales beige et brun",
-    label: "Sac spirale",
-  },
-  {
-    img: sacBeige.url,
-    alt: "Sac en raphia beige naturelle",
-    label: "Sac naturel",
-  },
-  {
-    img: sacNavy.url,
-    alt: "Sac en raphia bleu marine avec poignées en cuir",
-    label: "Sac marine & cuir",
-  },
-  {
-    img: sacAnthracite.url,
-    alt: "Sac tressé en raphia anthracite avec bouton en bois",
-    label: "Sac tisseur anthracite",
-  },
-  {
-    img: sacOr.url,
-    alt: "Sac tressé en raphia aux motifs dorés",
-    label: "Sac tisseur or",
-  },
-];
 
 function Index() {
   return (
