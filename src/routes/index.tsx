@@ -1,9 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
-import sacsImg from "@/assets/sacs.jpg";
-import chapeauReel from "@/assets/uploads/chapeau-reel.jpg.asset.json";
-import tapisImg from "@/assets/tapis.jpg";
-import boitesImg from "@/assets/boites.jpg";
 import savoirFaireImg from "@/assets/savoir-faire.jpg";
 import sacFleurs from "@/assets/uploads/sac-fleurs.jpg.asset.json";
 import sacSpirale from "@/assets/uploads/sac-spirale.jpg.asset.json";
@@ -11,6 +7,7 @@ import sacBeige from "@/assets/uploads/sac-beige.jpg.asset.json";
 import sacNavy from "@/assets/uploads/sac-navy.jpg.asset.json";
 import sacAnthracite from "@/assets/uploads/sac-tisseur-anthracite.jpg.asset.json";
 import sacOr from "@/assets/uploads/sac-tisseur-or.jpg.asset.json";
+import collectionDisplay from "@/assets/uploads/collection-display.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,32 +31,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const collections = [
-  {
-    img: sacsImg,
-    title: "Sacs",
-    desc: "Crochet & cuir",
-    alt: "Sac en raphia coloré avec cuir fait main",
-  },
-  {
-    img: chapeauReel.url,
-    title: "Chapeaux",
-    desc: "Tressés à la main",
-    alt: "Chapeau en raphia tressé à la main",
-  },
-  {
-    img: tapisImg,
-    title: "Tapis",
-    desc: "Raphia tissé",
-    alt: "Tapis en raphia coloré fait main",
-  },
-  {
-    img: boitesImg,
-    title: "Boîtes & pochettes",
-    desc: "Détail cuir",
-    alt: "Boîtes et pochettes en raphia coloré",
-  },
-];
 
 const creations = [
   {
@@ -133,14 +104,21 @@ function Index() {
             </span>
             <h1 className="font-display text-3xl md:text-4xl font-light leading-[1.15] mt-3">
               Le raphia de Madagascar,{" "}
-              <span className="italic">tressé pour le monde.</span>
+              <span className="italic">façonné avec savoir-faire.</span>
             </h1>
             <p className="mt-5 text-sm leading-relaxed text-ink/75">
-              De notre atelier familial d'Antananarivo aux marques,
-              importateurs et distributeurs du monde entier : une fibre
-              naturelle d'exception, les meilleurs artisans du pays, et la
-              capacité de produire en grand. Chaque pièce porte la main et
-              l'amour de ceux qui l'ont façonnée.
+              Au cœur d'un atelier familial à Antananarivo, nous donnons vie
+              au raphia de Madagascar avec passion et exigence.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-ink/75">
+              Une fibre naturelle d'exception, sublimée par le savoir-faire
+              de nos artisans et par une production capable de répondre aux
+              projets de différentes tailles.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-ink/75">
+              Derrière chaque pièce, il y a des mains, un savoir-faire et une
+              histoire. Chaque création porte aussi une part de l'âme de
+              ceux qui l'ont façonnée.
             </p>
           </div>
 
@@ -152,16 +130,25 @@ function Index() {
             />
             <div className="absolute -bottom-8 left-0 right-8 md:right-16 bg-card/95 p-6 shadow-xl border border-ink/5">
               <h2 className="font-display text-2xl md:text-3xl font-light leading-tight italic">
-                Une tradition familiale,{" "}
+                Le savoir-faire malgache,{" "}
                 <span className="not-italic font-semibold">
-                  tressée à la main.
+                  au cœur de chaque création.
                 </span>
               </h2>
               <p className="mt-3 text-[12px] leading-relaxed text-ink/70">
-                Sacs, chapeaux, tapis et boîtes nés dans notre atelier
-                d'Antananarivo. Nos artisans — parmi les meilleurs du raphia —
-                façonnent chaque pièce à la main, avec amour et patience. Vente
-                en gros, directement du fabricant.
+                Depuis notre atelier familial à Antananarivo, nous donnons vie
+                au raphia à travers une grande variété de créations, pensées
+                pour différents styles, usages et projets.
+              </p>
+              <p className="mt-2 text-[12px] leading-relaxed text-ink/70">
+                Chaque pièce est façonnée avec soin par nos artisans, qui
+                mettent leur savoir-faire, leur patience et leur sens du
+                détail au service d'une matière naturelle emblématique de
+                Madagascar.
+              </p>
+              <p className="mt-2 text-[12px] leading-relaxed text-ink/70">
+                Une fabrication authentique, portée par des mains expertes et
+                une passion pour le raphia.
               </p>
             </div>
           </div>
@@ -175,24 +162,11 @@ function Index() {
             </span>
             <h2 className="font-display text-2xl mt-2">La collection</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {collections.map((item) => (
-              <div
-                key={item.title}
-                className="bg-card/40 border border-ink/5 rounded-sm p-3"
-              >
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="w-full aspect-square rounded-sm object-cover mb-3"
-                />
-                <p className="font-display text-base font-semibold">
-                  {item.title}
-                </p>
-                <p className="text-xs text-ink/60">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          <img
+            src={collectionDisplay.url}
+            alt="Collection de sacs, chapeaux, tapis et boîtes en raphia coloré de Madagascar"
+            className="w-full aspect-[4/3] object-cover rounded-sm border border-ink/5"
+          />
         </section>
 
         {/* Nos créations — vraies photos produits */}
@@ -229,15 +203,23 @@ function Index() {
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-ember">
               Savoir-faire
             </span>
-            <h2 className="font-display text-2xl mt-2">L'exception malgache</h2>
+            <h2 className="font-display text-2xl mt-2">
+              L'essence du raphia malgache
+            </h2>
             <p className="mt-4 text-sm text-ink/80 leading-relaxed max-w-2xl">
-              Madagascar possède l'une des meilleures qualités au monde grâce à
-              son climat tropical et au palmier{" "}
-              <span className="italic font-medium text-ocean">
-                raphia
-              </span>
-              . Un savoir-faire transmis de génération en génération pour des
-              fibres longues, souples et résistantes.
+              À Madagascar, le raphia occupe une place particulière dans le
+              savoir-faire local. Cultivé dans un environnement naturel
+              favorable, il offre une fibre souple, longue et résistante,
+              idéale pour une grande variété de créations.
+            </p>
+            <p className="mt-3 text-sm text-ink/80 leading-relaxed max-w-2xl">
+              Transmis au fil des générations, le travail du raphia repose sur
+              des gestes précis et un savoir-faire profondément ancré dans la
+              culture malgache.
+            </p>
+            <p className="mt-3 text-sm font-medium text-ink/80 leading-relaxed max-w-2xl">
+              Une matière naturelle, un savoir-faire vivant, une signature
+              malgache.
             </p>
           </div>
           <img
